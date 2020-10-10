@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.grgbanking.com/product/eCAT3R2" elementFormDefault="qualified" targetNamespace="http://www.grgbanking.com/product/eCAT3R2" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://www.grgbanking.com/product/eCAT3" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/eCATInspectorSerivceProtocol" />
+  <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="LoginIn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="argPassword" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginInResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginInResult" type="xs:boolean" />
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginOff">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginOffResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginOffResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySnapshotOfData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QuerySnapshotOfDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://www.grgbanking.com/product/eCAT3" minOccurs="0" name="QuerySnapshotOfDataResult" nillable="true" type="q1:DataSnapShot" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListenDataChanged">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListenDataChangedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListenDataChangedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnlistenDataChanged">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UnlistenDataChangedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UnlistenDataChangedResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Hearbeat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="HearbeatResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EndCurrentWorkflow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EndCurrentWorkflowResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeWorkflow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+        <xs:element minOccurs="0" name="workflowName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="actionName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeWorkflowResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReDrawUI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReDrawUIResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DebugReboot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DebugRebootResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReLoadUI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReLoadUIResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Reboot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RebootResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShutDown">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ShutDownResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeDataCache">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argAccessToken" type="xs:int" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/eCATInspectorSerivceProtocol" minOccurs="0" name="dataType" type="q2:DataCacheType" />
+        <xs:element minOccurs="0" name="argKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="argValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChangeDataCacheResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OnDataChanged">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="argValue" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/eCATInspectorSerivceProtocol" minOccurs="0" name="argType" type="q3:DataCacheType" />
+        <xs:element minOccurs="0" name="argDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OnDataDeleted">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="argKey" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/eCATInspectorSerivceProtocol" minOccurs="0" name="argType" type="q4:DataCacheType" />
+        <xs:element minOccurs="0" name="argDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OnDataCacheClear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/eCATInspectorSerivceProtocol" minOccurs="0" name="argType" type="q5:DataCacheType" />
+        <xs:element minOccurs="0" name="argDateTime" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OnPackMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="timeStamp" nillable="true" type="xs:string" />
+        <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="dict" nillable="true" type="q6:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OnUnPackMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="timeStamp" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="dict" nillable="true" type="q7:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

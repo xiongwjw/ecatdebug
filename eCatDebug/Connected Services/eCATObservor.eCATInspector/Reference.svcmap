@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e86e9ff0-fc5f-4a37-969b-ce0920fbce4e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="net.tcp://localhost:8806/eCATInspector/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="eCAT3R2.wsdl" MetadataType="Wsdl" ID="20f66e67-b9cd-4c4e-9fd8-64b2427f3644" SourceId="1" SourceUrl="net.tcp://localhost:8806/eCATInspector/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="daa9c542-4c32-4504-a613-1f0b81856b94" SourceId="1" SourceUrl="net.tcp://localhost:8806/eCATInspector/mex" />
+    <MetadataFile FileName="eCAT3R2.xsd" MetadataType="Schema" ID="41c4ce0f-4fdb-42b6-a3ac-ae3e13cdf8c0" SourceId="1" SourceUrl="net.tcp://localhost:8806/eCATInspector/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="349dbc2c-87e7-439d-b5b0-404992efef58" SourceId="1" SourceUrl="net.tcp://localhost:8806/eCATInspector/mex" />
+    <MetadataFile FileName="eCAT3.xsd" MetadataType="Schema" ID="f6c0f736-6fff-4ba2-b964-78e73cdc0956" SourceId="1" SourceUrl="net.tcp://localhost:8806/eCATInspector/mex" />
+    <MetadataFile FileName="eCATInspectorSerivceProtocol.xsd" MetadataType="Schema" ID="96a2fc11-acf1-4ed6-92e1-f6d8fb778d16" SourceId="1" SourceUrl="net.tcp://localhost:8806/eCATInspector/mex" />
+    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="62ae13c8-b99c-434a-a7e1-3e91285d68f0" SourceId="1" SourceUrl="net.tcp://localhost:8806/eCATInspector/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
