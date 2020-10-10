@@ -4,6 +4,7 @@ obj/
 ipch/
 bin/
 log/
+! eCatDebug/
 .vs/
 *.aps
 *.ncb
